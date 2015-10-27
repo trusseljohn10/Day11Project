@@ -25,9 +25,9 @@
         <select ng-model="search1"class="input-medium">
           <option value="name">Name</option>
           <option value="friend_count">#Friends</option>
-          <option value="city">City</option>
-          <option value="state">State</option>
-          <option value="country">Country</option>
+          <option value="current_location.city">City</option>
+          <option value="current_location.state">State</option>
+          <option value="current_location.country">Country</option>
         </select>
 
         <select ng-model="search2"class="input-medium">
@@ -63,7 +63,7 @@
         <h3>{{friend.name}}</h3>
 
         <div class="location">
-          Location: {{friend.current_location.name}} - {{friend.current_location.country}}
+          Location: {{friend.current_location.city}}, {{friend.current_location.state}}, {{friend.current_location.country}}
         </div>
 
         <div class="status">
