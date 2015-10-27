@@ -434,9 +434,6 @@ app.controller('FriendController', function($scope){
     "$$hashKey": "02U"
   }
 ]
-		
-	
-
 });
 
 
